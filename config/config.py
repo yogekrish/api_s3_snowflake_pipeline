@@ -1,0 +1,27 @@
+# AWS
+import os
+
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+AWS_REGION = "us-east-1"
+
+S3_BUCKET_NAME = "yogendra-medallion-pipeline"
+
+BRONZE_KEY = "bronze/orders_raw.json"
+SILVER_KEY = "silver/orders_cleaned.json"
+
+# MOCKI API
+
+API_URL = "https://mocki.io/v1/0432f851-9947-4dcb-872c-fea903236152"
+
+# SNOWFLAKE
+
+SNOWFLAKE_USER = "YOGENDRPALLA02"
+SNOWFLAKE_PASSWORD = "Yoge@31102000$"
+SNOWFLAKE_ACCOUNT = "rdaztyh-cz30856"
+
+SNOWFLAKE_WAREHOUSE = "COMPUTE_WH"
+SNOWFLAKE_DATABASE = "API_PIPELINE_DB"
+SNOWFLAKE_SCHEMA = "PUBLIC"
+
+GOLD_TABLE = "ORDERS_GOLD"
