@@ -16,7 +16,7 @@ def fetch_api_data():
 
     response = requests.get(API_URL)
 
-    response.raise_for_status()
+    response.raise_for_status() #To check if its 200 ok or something else it fails if its something else
 
     return response.json()
 

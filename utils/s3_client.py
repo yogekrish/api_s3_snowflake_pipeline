@@ -1,8 +1,8 @@
 import boto3
 
 from config.config import (
-    AWS_ACCESS_KEY,
-    AWS_SECRET_KEY,
+    AWS_ACCESS_KEY_ID,
+    AWS_SECRET_ACCESS_KEY,
     AWS_REGION
 )
 
@@ -11,7 +11,7 @@ def get_s3_client():
 
     return boto3.client(
         "s3",
-        aws_access_key_id=AWS_ACCESS_KEY,
-        aws_secret_access_key=AWS_SECRET_KEY,
+        aws_access_key_id=AWS_ACCESS_KEY_ID,
+        aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
         region_name=AWS_REGION
     )

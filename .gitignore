@@ -2,4 +2,4 @@
 __pycache__/
 *.pyc
 logs/
-.env
+.envgit rm -r --cached bronze/__pycache__
